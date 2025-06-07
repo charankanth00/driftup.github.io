@@ -388,3 +388,44 @@ footer {
     flex-direction: column;
   }
 }
+/* Responsive Fixes for Mobile Devices */
+
+@media (max-width: 768px) {
+  /* Make service cards and testimonials stack vertically */
+  .service-cards,
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Make cards and testimonials full width on mobile */
+  .card,
+  .testimonial {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Make pricing table scrollable and smaller font */
+  .pricing table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.9rem;
+  }
+
+  /* Reduce padding in sections for small screens */
+  section {
+    padding: 2rem 1rem;
+  }
+
+  /* FAQ details font-size smaller and spacing better */
+  .faq details {
+    font-size: 1rem;
+  }
+
+  /* Adjust line heights for better readability */
+  ul, ol, p {
+    line-height: 1.4;
+  }
+}
